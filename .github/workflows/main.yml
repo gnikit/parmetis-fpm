@@ -25,5 +25,5 @@ jobs:
         with:
           author_name: "gnikit"
           author_email: giannis.nikiteas@gmail.com
-          message: "ci: update Gmsh API"
+          message: "ci: update ParMETIS C API"
           add: "."

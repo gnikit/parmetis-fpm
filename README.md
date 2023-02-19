@@ -12,7 +12,7 @@ This provides a Fortran API and a source repackaging of the
 ## Usage
 
 ```sh
-fpm build --flag "-DIDXTYPEWIDTH=64 -DREALTYPEWIDTH=64" --compiler mpif90 --c-flag "-DIDXTYPEWIDTH=64 -DREALTYPEWIDTH=64" --c-compiler mpicc
+fpm build --compiler mpifort --c-compiler mpicc
 ```
 
 To use `parmetis` as a dependency in your `fpm` project, add the following to your `fpm.toml` file:

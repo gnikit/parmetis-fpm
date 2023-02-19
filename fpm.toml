@@ -9,6 +9,7 @@ copyright = "Copyright 2022, gnikit"
 auto-executables = false
 auto-tests = false
 auto-examples = false
+external-modules = ["mpi_f08"]
 
 [install]
 library = true
@@ -18,3 +19,6 @@ include-dir = ["src/parmetis/include", "src/parmetis/libparmetis"]
 
 [dependencies]
 metis = { git = "https://github.com/gnikit/metis-fpm.git" }
+
+[preprocess]
+cpp.macros = ["IDXTYPEWIDTH=64", "REALTYPEWIDTH=64"]
